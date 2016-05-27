@@ -6,23 +6,23 @@ void In(int *p);
 
 int main(){
 
-	int T;
-	get_int(&T);
+	int t;
+	get_int(&t);
 
-	while(T--){
+	while(t--){
 
-		int N, result = 0, temp = 0;
+		int n, result = 0, temp = 0;
 
-		get_int(&N);
+		get_int(&n);
 		get_int(&temp);
-		N--;
+		n--;
 		result++;
-		while(N--){
-			int S;
-			get_int(&S);
-			if(S < temp){
+		while(n--){
+			int s;
+			get_int(&s);
+			if(s < temp){
 				result++;
-				temp = S;
+				temp = s;
 			}
 		}
 		printf("%d\n", result);
